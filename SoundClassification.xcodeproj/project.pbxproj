@@ -16,6 +16,8 @@
 		F43BE5FF27DCC34200D29FF2 /* SoundClassificationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F43BE5FE27DCC34200D29FF2 /* SoundClassificationTests.swift */; };
 		F43BE60927DCC34200D29FF2 /* SoundClassificationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F43BE60827DCC34200D29FF2 /* SoundClassificationUITests.swift */; };
 		F43BE60B27DCC34200D29FF2 /* SoundClassificationUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F43BE60A27DCC34200D29FF2 /* SoundClassificationUITestsLaunchTests.swift */; };
+		F4E1F79127DF98D300D84949 /* SoundResultsObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4E1F79027DF98D300D84949 /* SoundResultsObserver.swift */; };
+		F4E1F79527DF99BB00D84949 /* UIApplicationExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4E1F79427DF99BB00D84949 /* UIApplicationExtensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		F43BE60427DCC34200D29FF2 /* SoundClassificationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SoundClassificationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F43BE60827DCC34200D29FF2 /* SoundClassificationUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundClassificationUITests.swift; sourceTree = "<group>"; };
 		F43BE60A27DCC34200D29FF2 /* SoundClassificationUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundClassificationUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		F4E1F79027DF98D300D84949 /* SoundResultsObserver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundResultsObserver.swift; sourceTree = "<group>"; };
+		F4E1F79427DF99BB00D84949 /* UIApplicationExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIApplicationExtensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,9 +103,11 @@
 		F43BE5E627DCC34100D29FF2 /* SoundClassification */ = {
 			isa = PBXGroup;
 			children = (
+				F4E1F79727DF9A0B00D84949 /* ViewControllers */,
+				F4E1F79327DF99A200D84949 /* Extensions */,
+				F4E1F79227DF98DA00D84949 /* SoundAnalysisClasses */,
 				F43BE5E727DCC34100D29FF2 /* AppDelegate.swift */,
 				F43BE5E927DCC34100D29FF2 /* SceneDelegate.swift */,
-				F43BE5EB27DCC34100D29FF2 /* ViewController.swift */,
 				F43BE5ED27DCC34100D29FF2 /* Main.storyboard */,
 				F43BE5F027DCC34200D29FF2 /* Assets.xcassets */,
 				F43BE5F227DCC34200D29FF2 /* LaunchScreen.storyboard */,
@@ -125,6 +131,30 @@
 				F43BE60A27DCC34200D29FF2 /* SoundClassificationUITestsLaunchTests.swift */,
 			);
 			path = SoundClassificationUITests;
+			sourceTree = "<group>";
+		};
+		F4E1F79227DF98DA00D84949 /* SoundAnalysisClasses */ = {
+			isa = PBXGroup;
+			children = (
+				F4E1F79027DF98D300D84949 /* SoundResultsObserver.swift */,
+			);
+			path = SoundAnalysisClasses;
+			sourceTree = "<group>";
+		};
+		F4E1F79327DF99A200D84949 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				F4E1F79427DF99BB00D84949 /* UIApplicationExtensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		F4E1F79727DF9A0B00D84949 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				F43BE5EB27DCC34100D29FF2 /* ViewController.swift */,
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,6 +288,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F4E1F79127DF98D300D84949 /* SoundResultsObserver.swift in Sources */,
+				F4E1F79527DF99BB00D84949 /* UIApplicationExtensions.swift in Sources */,
 				F43BE5EC27DCC34100D29FF2 /* ViewController.swift in Sources */,
 				F43BE5E827DCC34100D29FF2 /* AppDelegate.swift in Sources */,
 				F43BE5EA27DCC34100D29FF2 /* SceneDelegate.swift in Sources */,
@@ -439,6 +471,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SoundClassification/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -466,6 +499,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SoundClassification/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
